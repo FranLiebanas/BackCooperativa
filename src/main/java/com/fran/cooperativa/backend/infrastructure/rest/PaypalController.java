@@ -20,8 +20,8 @@ import com.fran.cooperativa.backend.infrastructure.service.PaypalService;
 @RequestMapping("/api/payments")
 public class PaypalController {
     private final PaypalService paypalService;
-    private final String SUCCESS_URL = "http://localhost:8085/api/v1/payments/success";
-    private  final String CANCEL_URL = "http://localhost:8085/api/v1/payments/cancel";
+    private final String SUCCESS_URL = "http://localhost:8081/api/payments/success";
+    private  final String CANCEL_URL = "http://localhost:8081/api/payments/cancel";
 
     @PostMapping
     public URLPaypalResponse createPayment(@RequestBody DataPayment dataPayment){

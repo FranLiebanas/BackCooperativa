@@ -44,6 +44,7 @@ public class SecurityConfig {
                                 }
                         )).
                 csrf( csrf-> csrf.disable()).authorizeHttpRequests(
+<<<<<<< HEAD
                         aut -> aut.requestMatchers("/api/admin/categories/**").hasRole("ADMIN")
                                 .requestMatchers("/api/admin/products/**").hasRole("ADMIN")
                                 .requestMatchers("/api/orders/**").hasRole("USER")
@@ -52,6 +53,16 @@ public class SecurityConfig {
                                 .requestMatchers("/images/**").permitAll()
                                 .requestMatchers("/api/home/**").permitAll()
                                 .requestMatchers("/api/security/**").permitAll().anyRequest().authenticated()
+=======
+                        aut -> aut.requestMatchers("/api/v1/admin/categories/**").hasRole("ADMIN")
+                                .requestMatchers("/api/v1/admin/products/**").hasRole("ADMIN")
+                                .requestMatchers("/api/v1/orders/**").hasRole("USER")
+                                .requestMatchers("/api/v1/payments/success").permitAll()
+                                .requestMatchers("/api/v1/payments/**").hasRole("USER")
+                                .requestMatchers("/images/**").permitAll()
+                                .requestMatchers("/api/v1/home/**").permitAll()
+                                .requestMatchers("/api/v1/security/**").permitAll().anyRequest().authenticated()
+>>>>>>> 0c543862735b3f709f5ec07d73950f97ef2ac918
                 ).addFilterAfter(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class) ;
 
         return httpSecurity.build();

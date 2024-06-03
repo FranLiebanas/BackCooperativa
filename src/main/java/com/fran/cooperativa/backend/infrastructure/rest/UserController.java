@@ -2,6 +2,11 @@ package com.fran.cooperativa.backend.infrastructure.rest;
 
 import com.fran.cooperativa.backend.application.UserService;
 import com.fran.cooperativa.backend.domain.model.User;
+<<<<<<< HEAD
+=======
+import com.fran.cooperativa.backend.domain.model.UserNoRegister;
+import lombok.extern.slf4j.Slf4j;
+>>>>>>> 0c543862735b3f709f5ec07d73950f97ef2ac918
 import org.springframework.web.bind.annotation.*;
 
 @RestController

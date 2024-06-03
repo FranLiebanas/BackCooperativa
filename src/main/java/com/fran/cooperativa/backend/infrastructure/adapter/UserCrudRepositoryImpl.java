@@ -1,8 +1,15 @@
 package com.fran.cooperativa.backend.infrastructure.adapter;
 
 import com.fran.cooperativa.backend.domain.model.User;
+<<<<<<< HEAD
 import com.fran.cooperativa.backend.domain.port.IUserRepository;
 import com.fran.cooperativa.backend.infrastructure.mapper.UserMapper;
+=======
+import com.fran.cooperativa.backend.domain.model.UserNoRegister;
+import com.fran.cooperativa.backend.domain.port.IUserRepository;
+import com.fran.cooperativa.backend.infrastructure.mapper.UserMapper;
+import jakarta.transaction.Transactional;
+>>>>>>> 0c543862735b3f709f5ec07d73950f97ef2ac918
 import org.springframework.stereotype.Repository;
 
 

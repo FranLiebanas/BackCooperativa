@@ -1,6 +1,10 @@
 package com.fran.cooperativa.backend.infrastructure.mapper;
 
 import com.fran.cooperativa.backend.domain.model.User;
+<<<<<<< HEAD
+=======
+import com.fran.cooperativa.backend.domain.model.UserNoRegister;
+>>>>>>> 0c543862735b3f709f5ec07d73950f97ef2ac918
 import com.fran.cooperativa.backend.infrastructure.entity.UserEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
